@@ -21,7 +21,7 @@ TEST(LoginTest, CorrectLoginData) {
   auto [success, result] = fetcher.login("/userinfo.php", login_data);
 
   ASSERT_TRUE(success);
-  ASSERT_TRUE(result.find("John Smith (test)") != std::string::npos);
+  ASSERT_TRUE(result.find("Logout test") != std::string::npos);
 }
 
 TEST(LoginTest, IncorrectLoginData) {
