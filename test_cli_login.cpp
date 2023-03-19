@@ -3,8 +3,6 @@
 #include <gtest/gtest.h>
 #include <string>
 
-using namespace std::string_literals;
-
 TEST(LoginTest, NoLoginData) {
   HTMLFetcher fetcher{"testphp.vulnweb.com"};
   std::map<std::string, std::string> login_data;
